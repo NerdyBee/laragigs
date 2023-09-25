@@ -14,6 +14,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Bizzy's reference
+
+// Route::get('/posts', function (){
+//     return response()->json([
+//         'posts' =>  [
+//             [
+//                 'title' => 'Header column',
+//                 'category' => 'category column',
+//             ]
+//         ]
+//     ]);
+// });
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
